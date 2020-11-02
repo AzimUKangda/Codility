@@ -1,0 +1,31 @@
+Use of Bit wise in programming:
+
+BinaryLeftshift operator: When you apply binary left shift on number that means you are multiplying number by 2.
+BinaryRightShift operator: When you apply binary right shift on number that means you are dividing number by 2.
+
+Binary of even-number ends with 0 & odd-number ends with 1.
+This above concept can be use to check whether numberis even or odd by making AND of number with binary representation of number 1.
+
+Swap two number using bitwise operator
+
+Use of dynamic programming:
+
+DP is Enhanced Recursion.
+Problem is said to be DP when you see choice in probelm and optimal solution required(i.e. max, min, largest, smallest). if recursion with overlapping then it said to be DP.
+
+DP = Recursion + storage
+DP Process = Recursion -> memoization -> Top-down
+
+How to solve knapsack porblem:
+There are some stpes to be followed while implementing knapsack problem:
+1) Input type 
+2) Return type 
+3) Base condition --> think of the smallest valid I/P.
+4) Choice Diagram --> 
+
+choice diagram:
+
+
+
+
+
