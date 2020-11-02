@@ -21,10 +21,19 @@ There are some stpes to be followed while implementing knapsack problem:
 1) Input type 
 2) Return type 
 3) Base condition --> think of the smallest valid I/P.
-4) Choice Diagram --> 
+4) Choice Diagram --> Create diagram for all all possibilites.
 
-choice diagram:
+Knapsack code snippet:
 
+int knapsack(int wt[], int val[], int W, int n)
+{
+  if(n == 0 || w == 0)
+   return 0;
+  if(wt[n-1] <= w)
+   return max(val[n - 1] + knapsack(wt,val,w-wt[n-1]),n-1),knapsack(wt,val,w,n-1));
+  elseif(wt[n-1] >= w)
+   return knapsack(wt,val,w,n-1);
+}
 
 
 
