@@ -35,6 +35,29 @@ int knapsack(int wt[], int val[], int W, int n)
    return knapsack(wt,val,w,n-1);
 }
 
+Memoization:
+
+In Memoization will save the values of recursive code in metrics on (n*m) size.
+
+Of what size of matrics will create to :
+
+to create matrics will pick changing variables and will pick max size of all those and will create matircs of that size.
+
+after creating matrics of n * m, assign -1 to each of the cell using inbuild functions like memset.
+
+Static:
+int t[102][1000] from max size given for valid inputs.
+memset[t,-1,sizeof(t)]
+
+recursive code:
+
+int knapsack()
+{
+base condition:
+if[t[n][w] != -1]
+ return t[n][w]
+else call recursive code of knapsack and before returnig value at each stage store value to t[n][w] and then return. 
+}
 
 
 
